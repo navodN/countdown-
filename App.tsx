@@ -34,14 +34,14 @@ const TimeUnit: React.FC<TimeUnitProps> = ({ value, label }) => {
                 <GlitchDigit digit={formattedValue[0]} />
                 <GlitchDigit digit={formattedValue[1]} />
             </div>
-            <span className="mt-2 text-sm md:text-xl text-cyan-400 opacity-75 tracking-widest">{label}</span>
+            <span className="mt-2 text-sm md:text-xl text-white opacity-75 tracking-widest">{label}</span>
         </div>
     );
 };
 
 const TimeSeparator: React.FC = () => {
     return (
-        <div className="flex items-center justify-center h-full text-4xl md:text-6xl lg:text-8xl text-cyan-400/80 pb-8 md:pb-12">
+        <div className="flex items-center justify-center h-full text-4xl md:text-6xl lg:text-8xl text-white pb-8 md:pb-12">
             :
         </div>
     );
@@ -54,7 +54,7 @@ const App: React.FC = () => {
   const isFinished = days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0;
 
   return (
-    <div className="bg-black text-cyan-400 min-h-screen flex flex-col items-center justify-center p-4 select-none">
+    <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center p-4 select-none">
         {/* <header className="text-center mb-8 md:mb-16">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-widest text-white uppercase" data-text="COUNTDOWN">
                 <span className="glitch" data-text="COUNTDOWN">COUNTDOWN</span>
@@ -65,7 +65,7 @@ const App: React.FC = () => {
         </header> */}
 
         {isFinished ? (
-             <div className="text-4xl md:text-7xl font-bold text-center text-red-500">
+             <div className="text-4xl md:text-7xl font-bold text-center text-white">
                 <span className="glitch" data-text="TARGET REACHED">TARGET REACHED</span>
             </div>
         ) : (
