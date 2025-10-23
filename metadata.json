@@ -1,0 +1,5 @@
+{
+  "name": "Glitch Countdown Timer",
+  "description": "A futuristic, glitch-themed digital countdown timer built with React and Tailwind CSS, counting down to a specific date.",
+  "requestFramePermissions": []
+}
