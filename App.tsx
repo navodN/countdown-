@@ -55,14 +55,14 @@ const App: React.FC = () => {
 
   return (
     <div className="bg-black text-cyan-400 min-h-screen flex flex-col items-center justify-center p-4 select-none">
-        <header className="text-center mb-8 md:mb-16">
+        {/* <header className="text-center mb-8 md:mb-16">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-widest text-white uppercase" data-text="COUNTDOWN">
                 <span className="glitch" data-text="COUNTDOWN">COUNTDOWN</span>
             </h1>
             <p className="text-cyan-400/80 mt-2 text-sm md:text-base">
                 Time remaining until November 1st, {TARGET_DATE.getFullYear()}
             </p>
-        </header>
+        </header> */}
 
         {isFinished ? (
              <div className="text-4xl md:text-7xl font-bold text-center text-red-500">
@@ -70,19 +70,19 @@ const App: React.FC = () => {
             </div>
         ) : (
             <main className="flex items-center justify-center space-x-2 sm:space-x-4 md:space-x-8">
-                <TimeUnit value={days} label="DAYS" />
+                <TimeUnit value={days} label="" />
                 <TimeSeparator />
-                <TimeUnit value={hours} label="HOURS" />
+                <TimeUnit value={hours} label="" />
                 <TimeSeparator />
-                <TimeUnit value={minutes} label="MINUTES" />
+                <TimeUnit value={minutes} label="" />
                 <TimeSeparator />
-                <TimeUnit value={seconds} label="SECONDS" />
+                <TimeUnit value={seconds} label="" />
             </main>
         )}
         
-        <footer className="absolute bottom-4 text-xs text-white/30">
+        {/* <footer className="absolute bottom-4 text-xs text-white/30">
             Created by a world-class senior frontend React engineer.
-        </footer>
+        </footer> */}
     </div>
   );
 };
